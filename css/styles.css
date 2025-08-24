@@ -165,7 +165,6 @@ img {
 }
 
 .main-benefits {
-  background-color: red;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -265,7 +264,6 @@ img {
 }
 
 .section-four {
-  background-color: yellow;
   padding: 96px 0;
 }
 .portfolio {
@@ -694,7 +692,10 @@ img {
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(../images/people-office.jpg);
+      image-set(
+        url(../images/people-office.jpg) x1,
+        url(../images/people-office@2x.jpg) x2;
+      );
   }
   .main-header {
     margin: 0 auto;
